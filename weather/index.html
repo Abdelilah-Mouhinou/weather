@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="../../favIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+    />
+    <title>HanikO - Weather App</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="weather">Get current Weather</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2 class="text-primary">Enter city name</h2>
+        <span id="error"></span>
+      </div>
+      <div class="row">
+        <input
+          type="text"
+          name="city"
+          id="city"
+          class="form-control"
+          placeholder="City name"
+        />
+        <i id="submit-weather" class="fas fa-search"></i>
+      </div>
+      <div id="show"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
